@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Alex Langberg</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alex Langberg">
+    <meta name="keywords" content="Alex, Langberg, personal, information, accounts, mail, github, linkedin, facebook, twitter">
+    <meta name="author" content="Alex Langberg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: 'Covered By Your Grace';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url('CoveredByYourGrace.woff'), url('http://fonts.gstatic.com/s/coveredbyyourgrace/v6/6ozZp4BPlrbDRWPe3EBGAzcaOoGrwtJRci4wjFnSRpA.woff') format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        .va {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fa {
+            font-size: 18vw;
+        }
+
+        .wrapper {
+            color: #ECEFF1;
+            width: 100%;
+            height: 100%;
+            background: #37474F;
+        }
+
+        a {
+            transition: 0.3s;
+            color: #ECEFF1;
+        }
+
+        a:hover {
+            background: #3F51B5;
+        }
+
+        .square {
+            display: block;
+            text-align: center;
+            float: left;
+            width: 33.33%;
+            width: calc(100% / 3);
+            height: 50%;
+            height: calc(100% / 2);
+            border: 1px solid #263238;
+            box-sizing: border-box;
+        }
+
+        .name {
+            cursor: default;
+            font-size: 8vw;
+            font-family: 'Covered By Your Grace', 'sans-serif';
+            line-height: 0.8;
+        }
+
+        @media (orientation: portrait) {
+            .square {
+                width: 50%;
+                width: calc(100% / 2);
+                height: 33.33%;
+                height: calc(100% / 3);
+            }
+
+            .fa {
+                font-size: 18vh;
+            }
+
+            .name {
+                font-size: 8vh;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="square">
+        <div class="va">
+            <span class="name">
+                ALEX<br>
+                LANG<br>
+                BERG<br>
+            </span>
+        </div>
+    </div>
+    <a href="http://github.com/alexlangberg" class="square"><i class="va fa fa-github"></i></a>
+    <a href="http://linkedin.com/in/alexlangberg" class="square"><i class="va fa fa-linkedin-square"></i></a>
+    <a href="mailto:mail@alexlangberg.dk" class="square"><i class="va fa fa-envelope"></i></a>
+    <a href="http://twitter.com/alexlangberg" class="square"><i class="va fa fa-twitter"></i></a>
+    <a href="http://facebook.com/alexlangberg" class="square"><i class="va fa fa-facebook-official"></i></a>
+</div>
+</body>
+</html>
