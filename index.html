@@ -48,6 +48,7 @@
             transition: 0.3s;
             color: #ECEFF1;
             background: #303030;
+            border-color: #3F51B5;
         }
 
         a:focus {
@@ -66,12 +67,19 @@
             display: block;
             text-align: center;
             float: left;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .square-wrapper {
+            float: left;
             width: 33.33%;
             width: calc(100% / 3);
             height: 50%;
             height: calc(100% / 2);
-            border: 1px solid #212121;
             box-sizing: border-box;
+            border: 1px solid #212121;
         }
 
         .name {
@@ -82,7 +90,7 @@
         }
 
         @media (max-aspect-ratio: 1/1) {
-            .square {
+            .square-wrapper {
                 width: 50%;
                 width: calc(100% / 2);
                 height: 33.33%;
@@ -101,20 +109,32 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="square">
-        <div class="va">
-            <span class="name">
-                ALEX<br>
-                LANG<br>
-                BERG<br>
-            </span>
+    <div class="square-wrapper">
+        <div class="square">
+            <div class="va">
+                <span class="name">
+                    ALEX<br>
+                    LANG<br>
+                    BERG<br>
+                </span>
+            </div>
         </div>
     </div>
-    <a href="http://github.com/alexlangberg" class="square"><i class="va fa fa-github"></i></a>
-    <a href="http://linkedin.com/in/alexlangberg" class="square"><i class="va fa fa-linkedin-square"></i></a>
-    <a href="mailto:mail@alexlangberg.dk" class="square"><i class="va fa fa-envelope"></i></a>
-    <a href="http://twitter.com/alexlangberg" class="square"><i class="va fa fa-twitter"></i></a>
-    <a href="http://facebook.com/alexlangberg" class="square"><i class="va fa fa-facebook-official"></i></a>
+    <div class="square-wrapper">
+        <a href="http://github.com/alexlangberg" class="square"><i class="va fa fa-github"></i></a>
+    </div>
+    <div class="square-wrapper">
+        <a href="http://linkedin.com/in/alexlangberg" class="square"><i class="va fa fa-linkedin-square"></i></a>
+    </div>
+    <div class="square-wrapper">
+        <a href="mailto:mail@alexlangberg.dk" class="square"><i class="va fa fa-envelope"></i></a>
+    </div>
+    <div class="square-wrapper">
+        <a href="http://twitter.com/alexlangberg" class="square"><i class="va fa fa-twitter"></i></a>
+    </div>
+    <div class="square-wrapper">
+        <a href="http://facebook.com/alexlangberg" class="square"><i class="va fa fa-facebook-official"></i></a>
+    </div>
 </div>
 </body>
 </html>
