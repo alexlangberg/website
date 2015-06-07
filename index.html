@@ -5,6 +5,7 @@
     <meta name="description" content="Alex Langberg">
     <meta name="keywords" content="Alex, Langberg, personal, information, accounts, mail, github, linkedin, facebook, twitter">
     <meta name="author" content="Alex Langberg">
+    <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -25,6 +26,10 @@
         .va {
             position: relative;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
             transform: translateY(-50%);
         }
 
@@ -76,7 +81,7 @@
             line-height: 0.8;
         }
 
-        @media (orientation: portrait) {
+        @media (max-aspect-ratio: 1/1) {
             .square {
                 width: 50%;
                 width: calc(100% / 2);
