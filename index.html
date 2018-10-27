@@ -1,140 +1,141 @@
 <html>
 <head>
-    <title>Alex Langberg</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Alex Langberg">
-    <meta name="keywords" content="Alex, Langberg, personal, information, accounts, mail, github, linkedin, facebook, twitter">
-    <meta name="author" content="Alex Langberg">
-    <meta name="viewport" content="width=device-width" />
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+  <title>Alex Langberg</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Alex Langberg">
+  <meta name="keywords"
+        content="Alex, Langberg, personal, information, accounts, mail, github, linkedin, facebook, twitter">
+  <meta name="author" content="Alex Langberg">
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-        @font-face {
-            font-family: 'Covered By Your Grace';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url('CoveredByYourGrace.woff'), url('http://fonts.gstatic.com/s/coveredbyyourgrace/v6/6ozZp4BPlrbDRWPe3EBGAzcaOoGrwtJRci4wjFnSRpA.woff') format('woff');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-        }
+    @font-face {
+      font-family: 'Covered By Your Grace';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url('CoveredByYourGrace.woff'), url('http://fonts.gstatic.com/s/coveredbyyourgrace/v6/6ozZp4BPlrbDRWPe3EBGAzcaOoGrwtJRci4wjFnSRpA.woff') format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
 
-        .va {
-            position: relative;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
+    .va {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
 
-        .fa {
-            font-size: 18vw;
-        }
+    .fa {
+      font-size: 18vw;
+    }
 
-        .wrapper {
-            color: #ECEFF1;
-            width: 100%;
-            height: 100%;
-            background: #212121;
-        }
+    .wrapper {
+      color: #ECEFF1;
+      width: 100%;
+      height: 100%;
+      background: #212121;
+    }
 
-        a {
-            transition: 0.3s;
-            color: #ECEFF1;
-            background: #303030;
-            border-color: #3F51B5;
-        }
+    a {
+      transition: 0.3s;
+      color: #ECEFF1;
+      background: #303030;
+      border-color: #3F51B5;
+    }
 
-        a:focus {
-            border: 5px solid #3F51B5;
-        }
+    a:focus {
+      border: 5px solid #3F51B5;
+    }
 
-        a:hover {
-            border: 10px solid #3F51B5;
-        }
+    a:hover {
+      border: 10px solid #3F51B5;
+    }
 
-        a:active {
-            background: #3F51B5;
-        }
+    a:active {
+      background: #3F51B5;
+    }
 
-        .square {
-            display: block;
-            text-align: center;
-            float: left;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-        }
+    .square {
+      display: block;
+      text-align: center;
+      float: left;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
 
-        .square-wrapper {
-            float: left;
-            width: 33.33%;
-            width: calc(100% / 3);
-            height: 50%;
-            height: calc(100% / 2);
-            box-sizing: border-box;
-            border: 1px solid #212121;
-        }
+    .square-wrapper {
+      float: left;
+      width: 33.33%;
+      width: calc(100% / 3);
+      height: 50%;
+      height: calc(100% / 2);
+      box-sizing: border-box;
+      border: 1px solid #212121;
+    }
 
-        .name {
-            cursor: default;
-            font-size: 8vw;
-            font-family: 'Covered By Your Grace', 'sans-serif';
-            line-height: 0.8;
-        }
+    .name {
+      cursor: default;
+      font-size: 8vw;
+      font-family: 'Covered By Your Grace', 'sans-serif';
+      line-height: 0.8;
+    }
 
-        @media (max-aspect-ratio: 1/1) {
-            .square-wrapper {
-                width: 50%;
-                width: calc(100% / 2);
-                height: 33.33%;
-                height: calc(100% / 3);
-            }
+    @media (max-aspect-ratio: 1/1) {
+      .square-wrapper {
+        width: 50%;
+        width: calc(100% / 2);
+        height: 33.33%;
+        height: calc(100% / 3);
+      }
 
-            .fa {
-                font-size: 18vh;
-            }
+      .fa {
+        font-size: 18vh;
+      }
 
-            .name {
-                font-size: 8vh;
-            }
-        }
-    </style>
+      .name {
+        font-size: 8vh;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="wrapper">
-    <div class="square-wrapper">
-        <div class="square">
-            <div class="va">
-                <span class="name">
-                    ALEX<br>
-                    LANG<br>
-                    BERG<br>
-                </span>
-            </div>
-        </div>
+  <div class="square-wrapper">
+    <div class="square">
+      <div class="va">
+        <span class="name">
+            ALEX<br>
+            LANG<br>
+            BERG<br>
+        </span>
+      </div>
     </div>
-    <div class="square-wrapper">
-        <a href="http://github.com/alexlangberg" class="square"><i class="va fa fa-github"></i></a>
-    </div>
-    <div class="square-wrapper">
-        <a href="http://linkedin.com/in/alexlangberg" class="square"><i class="va fa fa-linkedin-square"></i></a>
-    </div>
-    <div class="square-wrapper">
-        <a href="mailto:mail@alexlangberg.dk" class="square"><i class="va fa fa-envelope"></i></a>
-    </div>
-    <div class="square-wrapper">
-        <a href="http://twitter.com/alexlangberg" class="square"><i class="va fa fa-twitter"></i></a>
-    </div>
-    <div class="square-wrapper">
-        <a href="http://facebook.com/alexlangberg" class="square"><i class="va fa fa-facebook-official"></i></a>
-    </div>
+  </div>
+  <div class="square-wrapper">
+    <a href="http://github.com/alexlangberg" class="square"><i class="va fa fa-github"></i></a>
+  </div>
+  <div class="square-wrapper">
+    <a href="http://linkedin.com/in/alexlangberg" class="square"><i class="va fa fa-linkedin-square"></i></a>
+  </div>
+  <div class="square-wrapper">
+    <a href="mailto:alexlangberg@gmail.com" class="square"><i class="va fa fa-envelope"></i></a>
+  </div>
+  <div class="square-wrapper">
+    <a href="http://twitter.com/alexlangberg" class="square"><i class="va fa fa-twitter"></i></a>
+  </div>
+  <div class="square-wrapper">
+    <a href="http://facebook.com/alexlangberg" class="square"><i class="va fa fa-facebook-official"></i></a>
+  </div>
 </div>
 </body>
 </html>
